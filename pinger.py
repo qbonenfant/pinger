@@ -126,7 +126,7 @@ def main():
             if(not cut):
                 cut = True       # We are now disconnected
                 msg = f"Disconnected at {current_time.strftime(time_format)} "
-                msg += f"on {start_time.strftime(date_format)}."
+                msg += f"on {current_time.strftime(date_format)}."
                 log(msg, logfn)
                 wait = dc_delay  # increase check frequency
         sleep(wait)
